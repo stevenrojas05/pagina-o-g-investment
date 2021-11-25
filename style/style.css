@@ -1,0 +1,248 @@
+/* Universales */
+*{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    font-family:'Krub', sans-serif;
+    box-sizing: border-box;
+}
+
+.sombra{
+    box-shadow: 0px 1.5px 15px 0px rgba(112,112,112,0.55);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/*_________________________Estilo del menu________________________________*/
+.cabecera{
+    overflow: hidden;
+}
+.menu_bar{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position: fixed;
+    height: 5em;
+    width: 100%;
+    z-index: 100;
+}
+#menu{
+    margin-top: 0;
+    background: #161616;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+#menu ul{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 0.93em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu ul li{
+    display: inline-block;
+}
+#menu ul li a{
+    color: white;
+    display: block;
+    padding: 0.95em 1.25em;
+    margin-top: 1em;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    color: #000000;
+}
+.item-r{
+    float: right;
+}
+.img{
+    float: left;
+}
+.img img{
+    height: 60px;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 800px){
+    #menu{
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+    }
+    #menu ul{
+        font-size: 1.9em;
+    }
+    #menu ul li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255,255,255, .3);
+    }
+    .menu_bar{
+        display: block;
+        width: 100%;
+        background: #353535;
+    }
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 1.35em 1.25em;
+        background: #353535;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 2em;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .menu_bar span{
+        float: right;
+        font-size: 1.6em;
+    }
+    #agradecimiento{
+        padding-top: 50%;
+        padding-bottom: 50%;
+    }
+    .caja_padre{
+        padding-top: 10%;
+    }
+}
+/*________________________________Fin estilo del menu_____________________________*/
+
+#imagen{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+#imagen img{
+    width: 100%;
+}
+
+#rendimiento{
+    margin: auto;
+    padding: 3rem;
+    width: 80%;
+}
+#rendimiento h2{
+    color: #353535;
+}
+#rendimiento img{
+    width: 60rem;
+}
+#rendimiento a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#rendimiento a:hover{
+    color:rgb(68, 68, 68);
+}
+
+.content{
+    margin: auto;
+    padding: 3rem;
+    color: #353535;
+    width: 80%;
+}
+.content h3{
+    font-size: 3.5rem;
+}
+.content h4{
+    font-size: 2.5rem;
+}
+.content p{
+    font-size: 2rem;
+    padding: 4rem;
+}
+
+.info{
+    margin: auto;
+    padding: 3rem;
+    color: #353535;
+    width: 80%;
+    border: solid 1px #353535;
+}
+
+
+/* Main */
+
+@media (min-width: 768px){
+    .seccion-principal{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }    
+}
+
+.redes-sociales_facebook, 
+.redes-sociales_instagram,
+.redes-sociales_telegram{
+    padding: 4rem;
+}
+
+
+.boton{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: #161616;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    size: 4rem;
+}
+
+.boton:hover{
+    background: rgb(68, 68, 68); 
+}
+
+.pasos{
+    height: 18rem;
+    margin: 2rem;
+}
+
+.boton2 a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: #07aadb;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 15rem;
+}
+.boton2 a:hover{
+    background: #00536d;
+}
+
+
+footer{
+    margin-top: 3rem;
+    padding: 1rem;
+}
